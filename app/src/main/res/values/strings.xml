@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="news_labe">新闻</string>
+    <string name="police_labe">政策</string>
+    <string name="project_labe">项目申报</string>
+    <string name="manuscripts">约稿</string>
+</resources>
