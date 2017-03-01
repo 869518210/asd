@@ -20,10 +20,12 @@ public class NewsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.news_fragment_layout,null);
-//        ViewGroup partent=(ViewGroup)view.getParent();
-//        if (partent!=null){
-//            partent.removeView(view);
-//        }
+//        判断view是否被partent加载过
+//        如果加载过就要移除，避免重复加载。
+        ViewGroup partent=(ViewGroup)view.getParent();
+        if (partent!=null){
+            partent.removeView(view);
+        }
         return view;
     }
 }
